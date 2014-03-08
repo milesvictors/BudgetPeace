@@ -1,0 +1,31 @@
+<div class="modal fade" id="regModal" tabindex="-1" role="form" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-form">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Register for Budget Peace</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label><br/>
+                        <input type="text" data-ng-model="firstName" id="firstName" class="form-control" placeholder="Enter first name" /><br>
+                        <label for="lastName">Last Name</label><br/>
+                        <input type="text" data-ng-model="lastName" id="lastName" class="form-control" placeholder="Enter last name" /><br>
+                        <label for="email">Email Address</label><br/>
+                        <input type="text" data-ng-model="email" id="email" class="form-control" placeholder="Enter email"/><br/>
+                        <label for="password">Password</label><br/>
+                        <input type="password" data-ng-model="password" id="password" class="form-control" placeholder="Enter password"/><br/>
+                        <label for="passwordConf">Password Confirmation</label><br/>
+                        <input type="password" data-ng-model="passwordConf" id="passwordConf" class="form-control" placeholder="Confirm password"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" >Register</button>
+                        <button type="reset" class="btn btn-default" >Reset</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

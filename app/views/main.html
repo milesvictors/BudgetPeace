@@ -4,8 +4,8 @@
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Peace_sign.svg/220px-Peace_sign.svg.png" alt="I'm Yeoman"><br>
     Free yourselves from financial oppression
   </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">Register</a></p>
-    <p><a class="btn btn-lg btn-primary" ng-href="#">Log In</a></p>
+    <p><a class="btn btn-lg btn-success" data-toggle="modal" data-target="#regModal">Register</a></p>
+    <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#loginModal">Log In</a></p>
 </div>
 
 <div class="footer">
@@ -16,3 +16,6 @@
       <li><a href="#">Contact Us</a></li>
   </ul>
 </div>
+
+<div class="container" ng-include="'views/modals/registration.html'" ng-controller="RegistrationCtrl"></div>
+<div class="container" ng-include="'views/modals/login.html'" ng-controller="LoginCtrl"></div>
